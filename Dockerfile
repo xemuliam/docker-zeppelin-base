@@ -12,4 +12,4 @@ RUN        apk update && apk add --upgrade curl && \
            rm -rf /var/cache/apk/*
 EXPOSE     8080 8443
 WORKDIR    ${ZPLIN_HOME}
-CMD        ./bin/zeppelin.sh
+CMD        ./bin/zeppelin.sh run
