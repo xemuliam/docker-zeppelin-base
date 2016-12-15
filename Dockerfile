@@ -10,6 +10,6 @@ RUN        apk update && apk add --upgrade curl && \
            rm -rf *.tar.gz && \
            apk del curl && \
            rm -rf /var/cache/apk/*
-EXPOSE     8080 7077
+EXPOSE     8080 8443
 WORKDIR    ${ZPLIN_HOME}
 CMD        ./bin/zeppelin.sh
