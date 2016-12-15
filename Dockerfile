@@ -3,7 +3,7 @@ MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/zeppelin
 ARG        VERSION=0.6.2
 ENV        ZPLIN_HOME=/opt/zeppelin
-RUN        apk update && apk add --upgrade curl && \
+RUN        apk update && apk add --upgrade bash curl && \
            mkdir -p ${ZPLIN_HOME} && \
            curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz | tar xvz -C ${ZPLIN_HOME} && \
            mv ${ZPLIN_HOME}/zeppelin-${VERSION}-bin-all/* ${ZPLIN_HOME} && \
