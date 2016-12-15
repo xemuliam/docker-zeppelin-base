@@ -5,7 +5,7 @@ ARG        VERSION=0.6.2
 ENV        ZPLN_HOME=/opt/zeppelin
 RUN        apk update && apk add --upgrade curl && \
            mkdir -p ${ZPLIN_HOME} && \
-           curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz && | tar xvz -C ${ZPLIN_HOME} && \
+           curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz | tar xvz -C ${ZPLIN_HOME} && \
            mv ${ZPLIN_HOME}/zeppelin-${VERSION}-bin-all/* ${ZPLIN_HOME} && \
            rm -rf *.tar.gz && \
            apk del curl && \
