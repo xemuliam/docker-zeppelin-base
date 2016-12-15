@@ -7,7 +7,8 @@ RUN        apk update && apk add --upgrade curl && \
            mkdir -p ${ZPLIN_HOME} && \
            curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz | tar xvz -C ${ZPLIN_HOME} && \
            mv ${ZPLIN_HOME}/zeppelin-${VERSION}-bin-all/* ${ZPLIN_HOME} && \
-           rm -rf *.tar.gz && \
+           rm -rf ${ZPLIN_HOME}/zeppelin-${VERSION}-bin-all && \
+           rm -rf *.tgz && \
            apk del curl && \
            rm -rf /var/cache/apk/*
 EXPOSE     8080 8443
