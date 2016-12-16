@@ -12,7 +12,7 @@ RUN        apk update && apk add --upgrade bash curl && \
            apk del curl && \
            rm -rf /var/cache/apk/*
 EXPOSE     7077 8080 8443
-VOLUME     ${ZEPPELIN_HOME}/logs \
-           ${ZEPPELIN_HOME}/notebook
+VOLUME     ${ZPLIN_HOME}/logs \
+           ${ZPLIN_HOME}/notebook
 WORKDIR    ${ZPLIN_HOME}
 CMD        ./bin/zeppelin.sh run
