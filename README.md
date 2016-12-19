@@ -1,6 +1,6 @@
 # Zeppelin-base
 
-- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.6.2svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg)
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg)
 
 Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache Zeppelin](http://zeppelin.apache.org), based on [Alpine](http://alpinelinux.org) and [OpenJDK](http://openjdk.java.net)
 
