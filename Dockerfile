@@ -1,4 +1,4 @@
-FROM       openjdk:7-alpine
+FROM       openjdk:8-alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        DIST_MIRROR=http://archive.apache.org/dist/zeppelin
 ARG        VERSION=0.6.2
