@@ -1,5 +1,6 @@
 # Zeppelin-base
 
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg)
 
 Basic and clean [Docker](https://www.docker.com/what-docker) image for [Apache Zeppelin](http://zeppelin.apache.org), based on [Alpine](http://alpinelinux.org) and [OpenJDK](http://openjdk.java.net)
@@ -23,7 +24,6 @@ Deployment options out of the box:
 
 # Exposed ports
 
-- 7077 - Spark master port
 - 8080 - Zeppelin web application port
 - 8443 - Zeppelin web application secure port
 
@@ -39,9 +39,9 @@ Zeppelin-specific:
 
 # Official Documentation and Guides
 
-- [Overview](http://zeppelin.apache.org/docs/0.6.2/)
-- [Quick Start](http://zeppelin.apache.org/docs/0.6.2/install/install.html)
-- [Interpreters](http://zeppelin.apache.org/docs/0.6.2/manual/interpreters.html)
+- [Overview](http://zeppelin.apache.org/docs/0.7.0/)
+- [Quick Start](http://zeppelin.apache.org/docs/0.7.0/install/install.html)
+- [Interpreters](http://zeppelin.apache.org/docs/0.7.0/manual/interpreters.html)
 - [Wiki](https://cwiki.apache.org/confluence/display/ZEPPELIN/Zeppelin+Home)
 
 
@@ -75,7 +75,7 @@ Kitematic will assign all ports and you'll be able to run NiFi web-interface dir
 # How to use from Docker CLI
 
 1. Start Docker Quickstart Terminal
-2. Run command  `docker run -d -p 8080:8080 -p 7077:7077 -p 8443:8443 xemuliam/zeppelin-base`
+2. Run command  `docker run -d -p 8080:8080 -p 8443:8443 xemuliam/zeppelin-base`
 3. Check Docker machine IP  `docker-machine ls`
 4. Use IP from previous step in address bar of your favorite browser, e.g. ` http://192.168.99.100:8080/#/`
 
