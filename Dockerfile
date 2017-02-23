@@ -5,7 +5,7 @@ ARG        VERSION=0.7.0
 ENV        ZEPPELIN_HOME=/opt/zeppelin \
            JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk \
            PATH=$PATH:/usr/lib/jvm/java-1.7-openjdk/jre/bin:/usr/lib/jvm/java-1.7-openjdk/bin
-RUN        apk update && apk add --upgrade bash curl openjdk7 && \
+RUN        apk update && apk add --upgrade bash curl jq openjdk7 && \
            mkdir -p ${ZEPPELIN_HOME} && \
            curl ${DIST_MIRROR}/zeppelin-${VERSION}/zeppelin-${VERSION}-bin-all.tgz | tar xvz -C ${ZEPPELIN_HOME} && \
            mv ${ZEPPELIN_HOME}/zeppelin-${VERSION}-bin-all/* ${ZEPPELIN_HOME} && \
