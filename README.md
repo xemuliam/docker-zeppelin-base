@@ -1,5 +1,6 @@
 # Zeppelin-base
 
+- ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.7.1.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.1.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.7.0.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.7.0.svg)
 - ![Version](https://images.microbadger.com/badges/version/xemuliam/zeppelin-base:0.6.2.svg) ![Layers](https://images.microbadger.com/badges/image/xemuliam/zeppelin-base:0.6.2.svg)
 
