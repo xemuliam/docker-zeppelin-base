@@ -15,4 +15,4 @@ EXPOSE     8080 8443
 VOLUME     ${ZEPPELIN_HOME}/logs \
            ${ZEPPELIN_HOME}/notebook
 WORKDIR    ${ZEPPELIN_HOME}
-CMD        ./bin/zeppelin.sh run
+CMD        ./bin/zeppelin-daemon.sh start
